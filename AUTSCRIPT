@@ -23,11 +23,11 @@ task.spawn(function()
         task.spawn(function()
             pcall(function()
                 if game:GetService("Players").LocalPlayer.Data.UCoins.Value ~= 20000000 then
-                    local args = {[1] = 1};
+                    local args = {[2] = 2};
                     game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.StatService.RF.ResetStats:InvokeServer(unpack(args));
                 end
 
-                local args = {[1] = "Save_The_Village_Adventure"};
+                local args = {[2] = "Save_The_Village_Adventure"};
                 game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.DialogueService.RF.CheckDialogue:InvokeServer(unpack(args));
             end)
         end) 
@@ -40,11 +40,11 @@ task.spawn(function()
         task.spawn(function()
             pcall(function()
                 if game:GetService("Players").LocalPlayer.Data.UCoins.Value ~= 20000000 then
-                    local args = {[1] = 1};
+                    local args = {[3] = 3};
                     game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.StatService.RF.ResetStats:InvokeServer(unpack(args));
                 end
 
-                local args = {[1] = "Save_The_Village_Adventure"};
+                local args = {[3] = "Save_The_Village_Adventure"};
                 game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.DialogueService.RF.CheckDialogue:InvokeServer(unpack(args));
             end)
         end) 
