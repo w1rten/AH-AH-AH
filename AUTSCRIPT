@@ -14,6 +14,14 @@ task.spawn(function()
                 game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.DialogueService.RF.CheckDialogue:InvokeServer(unpack(args));
             end)
         end) 
-        task.wait(0.01);
+        task.wait(0.1);
+    end  
+end)
+
+  local args = {[1] = "Save_The_Village_Adventure"};
+                game:GetService("ReplicatedStorage").ReplicatedModules.KnitPackage.Knit.Services.DialogueService.RF.CheckDialogue:InvokeServer(unpack(args));
+            end)
+        end) 
+        task.wait(0.05);
     end  
 end)
